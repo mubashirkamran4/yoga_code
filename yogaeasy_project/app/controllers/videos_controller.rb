@@ -2,11 +2,12 @@
 
 class VideosController < ApplicationController
   before_action :set_video, only: %i[show edit update destroy]
+  before_action :set_category, only: %i[index]
 
   # GET /videos
   # GET /videos.json
   def index
-    @videos = Video.all
+    @videos = @category.nil? ? Video.all : @category.videos
   end
 
   # GET /videos/1
@@ -66,6 +67,10 @@ class VideosController < ApplicationController
   # Use callbacks to share common setup or constraints between actions.
   def set_video
     @video = Video.find(params[:id])
+  end
+
+  def set_category
+    @category = Category.find_by_id(params[:category_id])
   end
 
   # Never trust parameters from the scary internet, only allow the white list through.

@@ -4,7 +4,7 @@ class Video < ApplicationRecord
   belongs_to :teacher, optional: false, inverse_of: :videos
   belongs_to :category, optional: false, inverse_of: :videos
 
-  validates :title, presence: true
+  validates :title, presence: true, uniqueness: { scope: :category_id }
   validates :description, length: { maximum: 300 }
   validates :url, presence: true, uniqueness: true
   validates :url, format: { with: %r{\A(http|https)://www\.youtube\.com/watch\?v=([a-zA-Z0-9_-]*)} }

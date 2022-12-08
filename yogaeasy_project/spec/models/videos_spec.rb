@@ -15,6 +15,7 @@ RSpec.describe Teacher do
     it { should_not allow_value('https://www.outsideyoutube.com').for(:url) }
     it { should allow_value('https://www.youtube.com/watch?v=lPdhXdSiBzY').for(:url) }
     it { should_not allow_value('https://www.youtube.com/invalid_watch').for(:url) }
+    it { should validate_uniqueness_of(:title).scoped_to(:category_id) }
     it do # if written like above example, it would try to test null value and hence would fail
       create(:video)
       should validate_uniqueness_of(:url)
