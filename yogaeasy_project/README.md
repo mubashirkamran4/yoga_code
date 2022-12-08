@@ -26,7 +26,9 @@ the videos by category.
 ## Assumptions
 
 A ```video``` must belong to a category and teacher and is youtube video.
+
 A ```teacher```'s thumbnail is basically avatar url of teacher's profile.
+
 Only one ```video``` with same ```title``` can exist under one category.
 
 ## How to Run
@@ -40,6 +42,9 @@ rails s
 ```
 
 Then open Postman and
+
+### Categories
+
 -> For CREATING Categories, send POST Request to ```localhost:3000/categories.json``` with params:
 ```
 category[name]= < name of category >
@@ -53,6 +58,7 @@ category[name]= < edited name of category >
 ```
 -> For DESTROYING Categories, send DELETE Request to ```localhost:3000/categories/< id of any category returned in above READING endpoint >.json``` which would delete the category with passed id.
 
+### Teachers
 
 
 -> For CREATING Teachers, send POST Request to ```localhost:3000/teachers.json``` with params:
@@ -72,7 +78,7 @@ teacher[thumbnail]= < Avatar URL >
 -> For DESTROYING Teachers, send DELETE Request to ```localhost:3000/teachers/< id of any teacher returned in above READING endpoint >.json``` which would delete the teacher with passed id.
 
 
-
+### Videos
 
 -> For CREATING Videos, send POST Request to ```localhost:3000/videos.json``` with params:
 ```
