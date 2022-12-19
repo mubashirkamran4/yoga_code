@@ -18,7 +18,7 @@ Only one ```video``` with same ```title``` can exist under one category.
 
 ## How to Run
 
-Navigate to ```yogaeasy_project``` in the terminal and run:
+Navigate to ```code_solution``` in the terminal and run:
 
 ```
 bundle install
