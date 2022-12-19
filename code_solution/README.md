@@ -2,21 +2,6 @@
 
 ## Solution
 
-My branch name is ```yogaeasy_solution``` with my rails project in  ```yogaeasy_project```.
-Although there is only one PR but The solution is present in 3 commits spearately:
-
-1). https://github.com/yogaeasy/cc-rails-mubashirkamran4/commit/98fb80c54b7a33857644368a8cb88e91ce9442ff
-with title : ```Basic Models Setup and Ready for Test cases```
-
-contains mainly the models setup in ```app/models/``` directory and migrations in ```db/migrate``` other than many scaffolded code.
-
-2). https://github.com/yogaeasy/cc-rails-mubashirkamran4/commit/39cc7f08377bc6a7eca681ca1cf2e0ba48cd6a42
-with title : ```Added TestCases for All Models```
-
-contains mainly the testcases in ```rspec/models/``` directory.
-
-3).https://github.com/yogaeasy/cc-rails-mubashirkamran4/commit/c576c44afeaaecb4a35c6da7f2942e543714ebd1
-with title : 
 ```
 CRUD Endpoints from scaffoling,with some Validations adjusted, Filter Videos by Category
 ```
