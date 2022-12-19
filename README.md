@@ -1,5 +1,3 @@
-Ruby on Rails Challenge
-
 Build a simple Rails app that provides a RESTful API for yoga videos.
 Please send a pull request with your solution.
 You can send subsequent ones for every task if you want.
